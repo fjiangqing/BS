@@ -7,8 +7,10 @@ import signal
 import atexit
 
 
+GPIO.setmode(GPIO.BOARD)
+
 lightPin = 4# GPIO Pin 18
-lightPin1 = 5 # GPIO Pin 19 
+lightPin1 = 5# GPIO Pin 19 
 
 
 GPIO.setup(lightPin1, GPIO.OUT)
@@ -35,7 +37,9 @@ GPIO.setup(turan, GPIO.IN)
 relay = 24
 
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+# =============================================================================
+# GPIO.setmode(GPIO.BCM)
+# =============================================================================
 GPIO.setup(relay, GPIO.OUT)
 
 servopin = 21

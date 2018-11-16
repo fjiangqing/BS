@@ -1,6 +1,6 @@
 # coding=utf-8
 
-import PRI.GPIO as GPIO
+import PRi.GPIO as GPIO
 import time
 import signal
 import atexit

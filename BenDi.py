@@ -1,9 +1,8 @@
-import RPi.GPIO as GPI
-import time
-import signal
-import atexit
 
-
+import PRI.GPIO as GPIO
+import time
+import signal
+import atexit
 
 #GPIO4,5 光敏传感器 数字量
 lightPin = 4  # GPIO Pin 18

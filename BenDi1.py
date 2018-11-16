@@ -31,18 +31,21 @@ GPIO.setup(turan, GPIO.IN)
 
 #atexit.register(GPIO.cleanup)
 
-relay = 24 
+relay = 24
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(relay, GPIO.OUT)  
+GPIO.setup(relay, GPIO.OUT)
 
 servopin = 21  
 
-GPIO.setmode(GPIO.BCM)  
-GPIO.setup(servopin, GPIO.OUT, initial=False)  
-p = GPIO.PWM(servopin,50) #50HZ  
-p.start(0)  
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(servopin, GPIO.OUT, initial=False)
+
+#50HZ  
+p = GPIO.PWM(servopin,50)
+
+p.start(0)
 time.sleep(2)
 
 

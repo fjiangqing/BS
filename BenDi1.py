@@ -30,14 +30,12 @@ time.sleep(0.5)
 GPIO.setup(turan, GPIO.IN)
 
 #atexit.register(GPIO.cleanup)
- 
 
 relay = 24 
 
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(relay, GPIO.OUT)  
-
 
 servopin = 21  
 
@@ -46,7 +44,7 @@ GPIO.setup(servopin, GPIO.OUT, initial=False)  
 p = GPIO.PWM(servopin,50) #50HZ  
 p.start(0)  
 time.sleep(2)
- 
+
 
 while(True):
 
@@ -57,7 +55,6 @@ while(True):
    else
        GPIO.output(relay, GPIO.LOW)
        time.sleep(1)
-   
 
    v = GPIO.input(lightPin)
    if (v == GPIO.LOW):
@@ -66,7 +63,7 @@ while(True):
          time.sleep(0.02)
          p.ChangeDutyCycle(0)
          time.sleep(0.2)
-  else
+   else
       v1 = GPIO.input(lightPin1)
       if (v1 == GPIO.LOW):
           for i in range(180,0,-10):

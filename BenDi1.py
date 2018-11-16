@@ -7,7 +7,7 @@ import atexit
 
 
 lightPin = 4# GPIO Pin 18
-lightPin1 = 5# GPIO Pin 19 
+lightPin1 = 5 # GPIO Pin 19 
 
 
 GPIO.setup(lightPin1, GPIO.OUT)
@@ -40,7 +40,8 @@ GPIO.setup(relay, GPIO.OUT)
 servopin = 21
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(servopin, GPIO.OUT, False)
+
+GPIO.setup(servopin, GPIO.OUT, initial = False)
 
 #50HZ  
 p = GPIO.PWM(servopin,50)

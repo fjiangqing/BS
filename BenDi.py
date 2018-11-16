@@ -1,7 +1,6 @@
-
-import RPi.GPIO as GPIO  
-import time  
-import signal  
+import RPi.GPIO as GPI
+import time
+import signal
 import atexit
 
 

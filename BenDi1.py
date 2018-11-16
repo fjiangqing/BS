@@ -37,7 +37,7 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(relay, GPIO.OUT)
 
-servopin = 21  
+servopin = 21
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT, initial=False)

@@ -7,10 +7,13 @@ import signal
 import atexit
 
 
+
+
+
 GPIO.setmode(GPIO.BOARD)
 
-lightPin = 4# GPIO Pin 18
-lightPin1 = 5# GPIO Pin 19 
+lightPin = 7
+lightPin1 = 11
 
 
 GPIO.setup(lightPin1, GPIO.OUT)
@@ -25,7 +28,7 @@ time.sleep(0.5)
 GPIO.setup(lightPin, GPIO.IN)
 
 
-turan = 6
+turan = 13
 
 GPIO.setup(turan, GPIO.OUT)
 GPIO.output(turan, GPIO.LOW)
@@ -34,7 +37,7 @@ GPIO.setup(turan, GPIO.IN)
 
 #atexit.register(GPIO.cleanup)
 
-relay = 24
+relay = 15
 
 GPIO.setwarnings(False)
 # =============================================================================
@@ -42,7 +45,7 @@ GPIO.setwarnings(False)
 # =============================================================================
 GPIO.setup(relay, GPIO.OUT)
 
-servopin = 21
+servopin = 29
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT)
 

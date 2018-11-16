@@ -25,7 +25,7 @@ time.sleep(0.5)
 
 relay = 15
 GPIO.setup(relay, GPIO.OUT)
-
+GPIO.output(relay, GPIO.LOW)
 #设定舵机控制
 servopin = 40
 GPIO.setup(servopin, GPIO.OUT, initial=False)

@@ -19,7 +19,7 @@ cameraCapture = cv2.VideoCapture(0)
 #cv2.namedWindow('myWindows')
 #cv2.setMouseCallback('myWindow', onMouse)
 
-print('Showing camera feed. Click window or pres any to stop')
+#print('Showing camera feed. Click window or pres any to stop')
 
 success, frame = cameraCapture.read()
 

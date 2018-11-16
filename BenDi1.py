@@ -42,7 +42,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT)
 
 #50HZ  
-p = GPIO.PWM(servopin,50)
+p = GPIO.PWM(servopin, 50)
 
 p.start(0)
 time.sleep(2)

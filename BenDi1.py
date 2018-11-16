@@ -46,8 +46,7 @@ GPIO.setwarnings(False)
 GPIO.setup(relay, GPIO.OUT)
 
 servopin = 29
-GPIO.setup(servopin, GPIO.OUT)
-
+GPIO.setup(servopin, GPIO.OUT, initial=False)
 #50HZ  
 p = GPIO.PWM(servopin, 50)
 

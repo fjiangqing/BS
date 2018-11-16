@@ -46,7 +46,6 @@ GPIO.setwarnings(False)
 GPIO.setup(relay, GPIO.OUT)
 
 servopin = 29
-GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT)
 
 #50HZ  

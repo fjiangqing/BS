@@ -54,7 +54,7 @@ while(True):
    if (t == GPIO.LOW):
       GPIO.output(relay, GPIO.HIGH)
       time.sleep(1)
-   else
+   else:
        GPIO.output(relay, GPIO.LOW)
        time.sleep(1)
 
@@ -65,7 +65,7 @@ while(True):
          time.sleep(0.02)
          p.ChangeDutyCycle(0)
          time.sleep(0.2)
-   else
+   else:
       v1 = GPIO.input(lightPin1)
       if (v1 == GPIO.LOW):
           for i in range(180,0,-10):
